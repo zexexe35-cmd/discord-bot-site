@@ -33,21 +33,23 @@
       border-bottom: 1px solid rgba(255,255,255,0.08);
     }
 
-    .header-inner {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      font-size: 1.1rem;
-      color: #bfa8ff;
-    }
+.header-inner {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: 1.5rem; /* BÜYÜTTÜK */
+  color: #cbb8ff;
+}
 
-    .header-inner img {
-      width: 34px;
-      height: 34px;
-      border-radius: 50%;
-    }
+.header-inner img {
+  width: 44px; /* büyüttük */
+  height: 44px;
+  border-radius: 50%;
+  box-shadow: 0 0 18px rgba(167,139,250,0.6);
+}
+
 
     /* HERO */
     main {
@@ -157,7 +159,7 @@
   <!-- HEADER -->
   <header>
     <div class="header-inner">
-      <img src="logo.png" alt="Syntax Logo">
+      <img src="syntaxlogo.png" alt="Syntax Logo">
       <span>SYNTAX</span>
     </div>
   </header>
@@ -176,12 +178,23 @@
         tek bir botta seni bekliyor.
       </p>
 
-      <div class="buttons">
-        <a href="#" class="btn btn-primary">Sunucuna Ekle</a>
-        <a href="#" class="btn btn-secondary">Destek Sunucusu</a>
-      </div>
-    </div>
-  </main>
+<div class="buttons">
+  <a 
+    href="https://discord.com/oauth2/authorize?client_id=1461438572081971386&permissions=8&integration_type=0&scope=bot+applications.commands"
+    class="btn btn-primary"
+    target="_blank"
+  >
+    Sunucuna Ekle
+  </a>
+
+  <a 
+    href="https://discord.gg/Z9jKxDNqx7"
+    class="btn btn-secondary"
+    target="_blank"
+  >
+    Destek Sunucusu
+  </a>
+</div>
 
   <!-- FOOTER -->
   <footer>
