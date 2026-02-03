@@ -1,70 +1,179 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Syntax | Gizlilik Politikası</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    :root {
+      --bg-dark: #020314;
+      --g1: #8b5cf6;
+      --g2: #a78bfa;
+      --g3: #60a5fa;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", system-ui, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at top, rgba(139,92,246,0.25), transparent 55%),
+        radial-gradient(circle at bottom right, rgba(96,165,250,0.25), transparent 55%),
+        linear-gradient(180deg, var(--bg-dark), #020314);
+      color: #eaeaf0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: linear-gradient(
+        90deg,
+        rgba(139,92,246,0.15),
+        rgba(167,139,250,0.15),
+        rgba(96,165,250,0.15)
+      );
+      backdrop-filter: blur(14px);
+      padding: 18px 40px;
+    }
+
+    .header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    .header-inner img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      box-shadow: 0 0 24px rgba(167,139,250,0.75);
+    }
+
+    .header-inner span {
+      font-size: 2.1rem;
+      font-weight: 900;
+      letter-spacing: 8px;
+      background: linear-gradient(135deg, var(--g1), var(--g2), var(--g3));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 20px rgba(167,139,250,0.6);
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .content-box {
+      max-width: 850px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 22px;
+      padding: 45px;
+      backdrop-filter: blur(14px);
+      text-align: center;
+    }
+
+    .content-box h1 {
+      font-size: 2.4rem;
+      margin-bottom: 25px;
+      background: linear-gradient(135deg, var(--g1), var(--g2), var(--g3));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .content-box p {
+      color: #c7cbe6;
+      line-height: 1.9;
+      font-size: 1.05rem;
+      margin-bottom: 18px;
+    }
+
+    footer {
+      padding: 30px 0 40px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 25px;
+      padding: 12px 26px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.1);
+      backdrop-filter: blur(10px);
+    }
+
+    .footer-links a {
+      color: #c7cbe6;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .footer-links a:hover {
+      color: #a78bfa;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-inner">
+    <img src="syntaxlogo.png" alt="Syntax Logo">
+    <span>SYNTAX</span>
+  </div>
+</header>
+
 <main>
-  <h2>Gizlilik Politikası</h2>
+  <div class="content-box">
+    <h1>Gizlilik Politikası</h1>
 
-  <p>
-    Bu Gizlilik Politikası, Syntax Discord botunun kullanıcılarından hangi
-    bilgileri topladığını, bu bilgileri hangi amaçlarla kullandığını ve
-    verilerin nasıl korunduğunu açıklamak amacıyla hazırlanmıştır.
-    Syntax botunu kullanarak bu politikada belirtilen şartları kabul etmiş
-    sayılırsınız.
-  </p>
+    <p>
+      Syntax Discord botu, kullanıcı gizliliğini öncelik olarak kabul eder.
+      Bu gizlilik politikası, bot tarafından toplanan verilerin türünü,
+      kullanım amacını ve korunma yöntemlerini açıklar.
+    </p>
 
-  <h2>Toplanan Veriler</h2>
-  <p>
-    Syntax, yalnızca botun düzgün ve güvenli bir şekilde çalışabilmesi için
-    gerekli olan minimum verileri toplar. Bu veriler arasında Discord kullanıcı
-    kimliği (User ID), sunucu kimliği (Guild ID), kanal kimliği (Channel ID)
-    ve bot komutları ile gerçekleşen etkileşimler yer alabilir.
-  </p>
-  <p>
-    Bot, kullanıcıların mesaj içeriklerini kalıcı olarak kaydetmez.
-    Mesajlar yalnızca komutların çalıştırılması sırasında geçici olarak
-    işlenebilir.
-  </p>
+    <p>
+      Bot yalnızca çalışması için gerekli olan minimum verileri toplar.
+      Bunlar kullanıcı ID, sunucu ID ve bot komutlarıyla yapılan
+      etkileşim bilgilerini içerebilir.
+    </p>
 
-  <h2>Verilerin Kullanım Amacı</h2>
-  <p>
-    Toplanan veriler, Syntax botunun temel işlevlerini yerine getirmesi,
-    komutların doğru çalışması, hata tespiti yapılması ve kullanıcı deneyiminin
-    iyileştirilmesi amacıyla kullanılır.
-  </p>
-  <p>
-    Veriler hiçbir şekilde reklam, pazarlama veya kullanıcı profili oluşturma
-    amacıyla kullanılmaz.
-  </p>
+    <p>
+      Toplanan veriler yalnızca botun işlevlerini yerine getirmesi,
+      hataların giderilmesi ve hizmet kalitesinin artırılması amacıyla kullanılır.
+      Hiçbir koşulda üçüncü taraflarla paylaşılmaz.
+    </p>
 
-  <h2>Verilerin Paylaşımı</h2>
-  <p>
-    Syntax tarafından toplanan veriler üçüncü şahıslar, şirketler veya
-    hizmet sağlayıcılar ile paylaşılmaz. Yasal bir zorunluluk bulunmadıkça
-    hiçbir veri dış kaynaklara aktarılmaz.
-  </p>
-
-  <h2>Veri Güvenliği</h2>
-  <p>
-    Syntax, toplanan verilerin yetkisiz erişim, kayıp, kötüye kullanım veya
-    ifşa edilmesini önlemek için makul teknik ve idari güvenlik önlemleri
-    uygular. Ancak internet üzerinden yapılan veri iletimlerinin %100 güvenli
-    olduğu garanti edilemez.
-  </p>
-
-  <h2>Veri Saklama Süresi</h2>
-  <p>
-    Toplanan veriler yalnızca gerekli olduğu süre boyunca saklanır.
-    Botun çalışması için artık gerekli olmayan veriler düzenli olarak
-    silinir veya anonim hale getirilir.
-  </p>
-
-  <h2>Veri Silme Talebi</h2>
-  <p>
-    Kullanıcılar, kendilerine ait verilerin silinmesini talep etme hakkına
-    sahiptir. Bu talepler bot geliştiricisi ile iletişime geçilerek
-    gerçekleştirilebilir.
-  </p>
-
-  <h2>Değişiklikler</h2>
-  <p>
-    Bu Gizlilik Politikası zaman zaman güncellenebilir. Yapılan değişiklikler
-    bu sayfa üzerinden yayınlandığı anda yürürlüğe girer.
-  </p>
+    <p>
+      Kullanıcılar, istedikleri zaman bot geliştiricisi ile iletişime geçerek
+      verilerinin silinmesini talep edebilir.
+    </p>
+  </div>
 </main>
+
+<footer>
+  <div class="footer-links">
+    <a href="/">Ana Sayfa</a>
+    <a href="/terms.html">Hizmet Şartları</a>
+    <a href="/privacy.html">Gizlilik Politikası</a>
+  </div>
+</footer>
+
+</body>
+</html>
