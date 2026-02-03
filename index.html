@@ -6,6 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
+    :root {
+      --g1: #8b5cf6;
+      --g2: #a78bfa;
+      --g3: #60a5fa;
+      --bg-dark: #050816;
+    }
+
     * {
       margin: 0;
       padding: 0;
@@ -15,53 +22,53 @@
 
     body {
       min-height: 100vh;
-      background: radial-gradient(circle at left, #2a1b5e 0%, #070b16 55%);
-      color: #eaeaf0;
       display: flex;
       flex-direction: column;
+      background:
+        radial-gradient(circle at top, rgba(139,92,246,0.25), transparent 55%),
+        radial-gradient(circle at bottom right, rgba(96,165,250,0.25), transparent 55%),
+        linear-gradient(180deg, var(--bg-dark), #020314);
+      color: #eaeaf0;
     }
 
     /* HEADER */
     header {
       width: 100%;
-      padding: 18px 40px;
       display: flex;
       justify-content: center;
-      align-items: center;
-      background: rgba(10, 10, 25, 0.6);
-      backdrop-filter: blur(12px);
+      padding: 18px 40px;
+      background: linear-gradient(
+        90deg,
+        rgba(139,92,246,0.15),
+        rgba(167,139,250,0.15),
+        rgba(96,165,250,0.15)
+      );
+      backdrop-filter: blur(14px);
       border-bottom: 1px solid rgba(255,255,255,0.08);
     }
 
-.header-inner span {
-  font-size: 1.6rem;
-  font-weight: 800;
-  letter-spacing: 6px;
+    .header-inner {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
 
-  background: linear-gradient(
-    135deg,
-    #8b5cf6,
-    #a78bfa,
-    #60a5fa
-  );
+    .header-inner img {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      box-shadow: 0 0 24px rgba(167,139,250,0.75);
+    }
 
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-
-  text-shadow: 0 0 20px rgba(167,139,250,0.6);
-}
-
-
-
-.header-inner img {
-  width: 56px;     /* LOGO DAHA BÜYÜK */
-  height: 56px;
-  border-radius: 50%;
-  box-shadow: 0 0 24px rgba(167,139,250,0.75);
-}
-
-
+    .header-inner span {
+      font-size: 1.7rem;
+      font-weight: 800;
+      letter-spacing: 6px;
+      background: linear-gradient(135deg, var(--g1), var(--g2), var(--g3));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 22px rgba(167,139,250,0.6);
+    }
 
     /* HERO */
     main {
@@ -84,7 +91,9 @@
     }
 
     .hero h1 span {
-      color: #a78bfa;
+      background: linear-gradient(135deg, var(--g1), var(--g2), var(--g3));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     .hero p {
@@ -111,18 +120,17 @@
       transition: all 0.25s ease;
       display: inline-flex;
       align-items: center;
-      gap: 10px;
     }
 
     .btn-primary {
-      background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+      background: linear-gradient(135deg, var(--g1), var(--g2), var(--g3));
       color: #fff;
-      box-shadow: 0 0 30px rgba(167,139,250,0.45);
+      box-shadow: 0 0 40px rgba(139,92,246,0.55);
     }
 
     .btn-primary:hover {
       transform: translateY(-2px);
-      box-shadow: 0 0 45px rgba(167,139,250,0.7);
+      box-shadow: 0 0 55px rgba(167,139,250,0.8);
     }
 
     .btn-secondary {
@@ -136,7 +144,7 @@
       transform: translateY(-2px);
     }
 
-    /* FOOTER LINKS */
+    /* FOOTER */
     footer {
       padding: 30px 0 40px;
       display: flex;
@@ -157,11 +165,10 @@
       color: #c7cbe6;
       text-decoration: none;
       font-size: 0.9rem;
-      transition: color 0.2s ease;
     }
 
     .footer-links a:hover {
-      color: #a78bfa;
+      color: var(--g2);
     }
   </style>
 </head>
@@ -190,23 +197,25 @@
         tek bir botta seni bekliyor.
       </p>
 
-<div class="buttons">
-  <a 
-    href="https://discord.com/oauth2/authorize?client_id=1461438572081971386&permissions=8&integration_type=0&scope=bot+applications.commands"
-    class="btn btn-primary"
-    target="_blank"
-  >
-    Sunucuna Ekle
-  </a>
+      <div class="buttons">
+        <a
+          href="https://discord.com/oauth2/authorize?client_id=1461438572081971386&permissions=8&integration_type=0&scope=bot+applications.commands"
+          class="btn btn-primary"
+          target="_blank"
+        >
+          Sunucuna Ekle
+        </a>
 
-  <a 
-    href="https://discord.gg/Z9jKxDNqx7"
-    class="btn btn-secondary"
-    target="_blank"
-  >
-    Destek Sunucusu
-  </a>
-</div>
+        <a
+          href="https://discord.gg/Z9jKxDNqx7"
+          class="btn btn-secondary"
+          target="_blank"
+        >
+          Destek Sunucusu
+        </a>
+      </div>
+    </div>
+  </main>
 
   <!-- FOOTER -->
   <footer>
