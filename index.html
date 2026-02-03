@@ -1,16 +1,94 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <title>Discord Bot Web Sitesi</title>
-</head>
-<body>
-  <h1>Discord Botum</h1>
-  <p>Bu site Discord botu için yasal bilgilendirme amacıyla oluşturulmuştur.</p>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Discord Bot</title>
 
-  <ul>
-    <li><a href="/privacy.html">Gizlilik Politikası</a></li>
-    <li><a href="/terms.html">Kullanım Şartları</a></li>
-  </ul>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Inter, system-ui, Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0f172a, #020617);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #e5e7eb;
+    }
+
+    .card {
+      background: rgba(15, 23, 42, 0.85);
+      border-radius: 16px;
+      padding: 40px;
+      max-width: 520px;
+      width: 90%;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 12px;
+    }
+
+    p {
+      color: #cbd5f5;
+      line-height: 1.6;
+      margin-bottom: 32px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    a {
+      text-decoration: none;
+      padding: 14px 22px;
+      border-radius: 10px;
+      background: #6366f1;
+      color: white;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+
+    a:hover {
+      background: #4f46e5;
+      transform: translateY(-2px);
+    }
+
+    footer {
+      margin-top: 32px;
+      font-size: 0.85rem;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <h1>Discord Botum</h1>
+
+    <p>
+      Bu site, Discord botu için gizlilik politikası ve kullanım şartlarını
+      paylaşmak amacıyla oluşturulmuştur.
+    </p>
+
+    <div class="buttons">
+      <a href="/privacy.html">Gizlilik Politikası</a>
+      <a href="/terms.html">Kullanım Şartları</a>
+    </div>
+
+    <footer>
+      © 2026 Discord Bot
+    </footer>
+  </div>
 </body>
 </html>
