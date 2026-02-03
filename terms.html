@@ -1,21 +1,221 @@
-<h1>Hizmet Şartları</h1>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hizmet Şartları | SYNTAX</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<p>
-  Syntax Discord botunu kullanarak bu hizmet şartlarını kabul etmiş sayılırsınız.
-  Bot, Discord platformunun kullanım koşullarına uygun şekilde çalışır.
-</p>
+  <style>
+    :root {
+      --g1: #8b5cf6;
+      --g2: #a78bfa;
+      --g3: #60a5fa;
+      --bg-dark: #050816;
+    }
 
-<p>
-  Botun sunduğu özellikler zamanla değiştirilebilir, güncellenebilir
-  veya tamamen kaldırılabilir. Geliştirici bu konuda sorumluluk kabul etmez.
-</p>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", system-ui, sans-serif;
+    }
 
-<p>
-  Botun kötüye kullanımı, spam, istismar veya Discord kurallarına aykırı
-  faaliyetler tespit edildiğinde erişim kısıtlanabilir.
-</p>
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background:
+        radial-gradient(circle at top, rgba(139,92,246,0.25), transparent 55%),
+        radial-gradient(circle at bottom right, rgba(96,165,250,0.25), transparent 55%),
+        linear-gradient(180deg, var(--bg-dark), #020314);
+      color: #eaeaf0;
+    }
 
-<p>
-  Hizmet şartları gerekli görüldüğünde güncellenebilir.
-  Güncel sürüm her zaman bu sayfada yayınlanır.
-</p>
+    header {
+      padding: 18px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      font-weight: 900;
+      letter-spacing: 6px;
+      background: linear-gradient(135deg, var(--g1), var(--g2), var(--g3));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    main {
+      flex: 1;
+      padding: 60px 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .content {
+      max-width: 900px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 22px;
+      padding: 40px;
+      backdrop-filter: blur(12px);
+    }
+
+    .content h2 {
+      margin-top: 34px;
+      margin-bottom: 12px;
+      font-size: 1.45rem;
+      color: var(--g2);
+    }
+
+    .content p,
+    .content li {
+      color: #b7bdd6;
+      line-height: 1.75;
+      font-size: 0.95rem;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    footer {
+      padding: 30px 0 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 25px;
+      padding: 12px 26px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.1);
+      backdrop-filter: blur(10px);
+    }
+
+    .footer-links a {
+      color: #c7cbe6;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .footer-links a:hover {
+      color: var(--g2);
+    }
+
+    .footer-copy {
+      font-size: 0.8rem;
+      color: #9aa0c2;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>SYNTAX</h1>
+</header>
+
+<main>
+  <div class="content">
+
+    <h2>1. Kabul ve Kapsam</h2>
+    <p>
+      Bu Hizmet Şartları (“Şartlar”), SYNTAX Discord botunu kullanan tüm kullanıcılar
+      için bağlayıcıdır. Botu bir Discord sunucusuna eklemeniz, herhangi bir özelliğini
+      kullanmanız veya botla etkileşimde bulunmanız bu şartları okuduğunuzu,
+      anladığınızı ve kabul ettiğinizi gösterir.
+    </p>
+
+    <h2>2. Hizmetin Tanımı</h2>
+    <p>
+      SYNTAX; Discord sunucularında moderasyon, otomasyon, yönetim kolaylığı,
+      kullanıcı deneyimi iyileştirme ve çeşitli yardımcı araçlar sunan bir yazılımdır.
+      Sunulan özellikler sürekli olarak geliştirilebilir, değiştirilebilir veya kaldırılabilir.
+    </p>
+
+    <h2>3. Uygun Kullanım Politikası</h2>
+    <ul>
+      <li>Bot, Discord Hizmet Şartları ve Topluluk Kurallarına aykırı şekilde kullanılamaz.</li>
+      <li>Spam, kötüye kullanım, saldırı, istismar veya yasa dışı faaliyetler yasaktır.</li>
+      <li>Botun güvenliğini zedeleyecek veya performansını etkileyecek eylemler yapılamaz.</li>
+      <li>Yetkisiz veri toplama veya izleme amaçlı kullanılamaz.</li>
+    </ul>
+
+    <h2>4. Yetkilendirme ve İzinler</h2>
+    <p>
+      SYNTAX’a verilen izinler yalnızca botun düzgün çalışabilmesi amacıyla kullanılır.
+      Kullanıcılar, botu eklerken verdikleri izinlerden kendileri sorumludur.
+    </p>
+
+    <h2>5. Veri İşleme ve Saklama</h2>
+    <p>
+      SYNTAX yalnızca hizmetin sağlanabilmesi için gerekli olan minimum verileri işler.
+      Bu veriler; sunucu kimlikleri, kanal kimlikleri, yapılandırma ayarları ve
+      moderasyon kayıtlarını içerebilir.
+    </p>
+
+    <h2>6. Gizlilik</h2>
+    <p>
+      Kişisel verilerin nasıl işlendiği, saklandığı ve korunduğu hakkında detaylı bilgi
+      Gizlilik Politikası sayfasında yer almaktadır. Hizmeti kullanarak bu politikayı
+      kabul etmiş sayılırsınız.
+    </p>
+
+    <h2>7. Hizmetin Askıya Alınması veya Sonlandırılması</h2>
+    <p>
+      SYNTAX, herhangi bir kullanıcıyı veya sunucuyu, kötüye kullanım, güvenlik
+      tehdidi veya şartların ihlali durumunda önceden bildirim yapmaksızın
+      hizmetten men edebilir veya erişimi sınırlandırabilir.
+    </p>
+
+    <h2>8. Sorumluluk Reddi</h2>
+    <p>
+      SYNTAX “olduğu gibi” sunulmaktadır. Hizmetin kesintisiz, hatasız veya
+      beklentilerinize tamamen uygun olacağı garanti edilmez.
+      Botun kullanımından doğabilecek doğrudan veya dolaylı zararlardan
+      geliştirici sorumlu tutulamaz.
+    </p>
+
+    <h2>9. Üçüncü Taraf Hizmetler</h2>
+    <p>
+      SYNTAX, Discord platformu ve üçüncü taraf servislerle entegre çalışabilir.
+      Bu servislerin yaşadığı sorunlardan SYNTAX sorumlu değildir.
+    </p>
+
+    <h2>10. Değişiklikler</h2>
+    <p>
+      Bu Hizmet Şartları zaman zaman güncellenebilir.
+      Güncellemeler bu sayfa üzerinden yayınlanır ve yayınlandığı anda
+      yürürlüğe girer.
+    </p>
+
+    <h2>11. İletişim</h2>
+    <p>
+      Hizmet Şartları ile ilgili sorularınız için destek sunucumuz üzerinden
+      bizimle iletişime geçebilirsiniz.
+    </p>
+
+  </div>
+</main>
+
+<footer>
+  <div class="footer-links">
+    <a href="/">Ana Sayfa</a>
+    <a href="/terms.html">Hizmet Şartları</a>
+    <a href="/privacy.html">Gizlilik Politikası</a>
+  </div>
+
+  <div class="footer-copy">
+    © 2026 SYNTAX. Tüm hakları saklıdır.
+  </div>
+</footer>
+
+</body>
+</html>
