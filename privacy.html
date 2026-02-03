@@ -31,6 +31,7 @@
       flex-direction: column;
     }
 
+    /* HEADER */
     header {
       background: linear-gradient(
         90deg,
@@ -43,11 +44,9 @@
     }
 
     .header-inner {
-      max-width: 1100px;
-      margin: 0 auto;
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       gap: 16px;
     }
 
@@ -59,33 +58,33 @@
     }
 
     .header-inner span {
-      font-size: 2.1rem;
+      font-size: 2.2rem;
       font-weight: 900;
       letter-spacing: 8px;
       background: linear-gradient(135deg, var(--g1), var(--g2), var(--g3));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      text-shadow: 0 0 20px rgba(167,139,250,0.6);
     }
 
+    /* MAIN (ÖNEMLİ KISIM) */
     main {
       flex: 1;
-      display: flex;
-      justify-content: center;
-      padding: 60px 20px;
+      padding: 80px 20px;
+      display: block; /* ← FLEX İPTAL */
     }
 
     .content-box {
       max-width: 900px;
+      margin: 0 auto;
       background: rgba(255,255,255,0.05);
       border: 1px solid rgba(255,255,255,0.12);
       border-radius: 22px;
-      padding: 55px;
+      padding: 60px;
       backdrop-filter: blur(14px);
-      text-align: center;
     }
 
     .content-box h1 {
+      text-align: center;
       font-size: 2.6rem;
       margin-bottom: 40px;
       background: linear-gradient(135deg, var(--g1), var(--g2), var(--g3));
@@ -95,20 +94,17 @@
 
     .content-box p {
       color: #c7cbe6;
-      line-height: 2;
+      line-height: 2.1;
       font-size: 1.05rem;
-      margin-bottom: 24px;
+      margin-bottom: 26px;
+      text-align: left;
     }
 
     /* FOOTER */
     footer {
-      padding: 35px 0 45px;
+      padding: 30px 0 40px;
       display: flex;
       justify-content: center;
-    }
-
-    .footer-inner {
-      display: flex;
       flex-direction: column;
       align-items: center;
       gap: 14px;
@@ -116,4 +112,92 @@
 
     .footer-links {
       display: flex;
-      gap
+      gap: 22px;
+      padding: 10px 24px;
+      background: rgba(255,255,255,0.06);
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.12);
+      backdrop-filter: blur(10px);
+    }
+
+    .footer-links a {
+      color: #c7cbe6;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .footer-links a:hover {
+      color: #a78bfa;
+    }
+
+    .footer-copy {
+      font-size: 0.75rem;
+      color: #9aa0c4;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-inner">
+    <img src="syntaxlogo.png" alt="Syntax Logo">
+    <span>SYNTAX</span>
+  </div>
+</header>
+
+<main>
+  <div class="content-box">
+    <h1>Gizlilik Politikası</h1>
+
+    <p>
+      İşbu Gizlilik Politikası, Syntax Discord Botu tarafından sunulan hizmetler
+      kapsamında kullanıcı gizliliğinin korunmasına ilişkin esasları açıklamak
+      amacıyla hazırlanmıştır. Bu metin son derece uzun, detaylı ve okunması
+      sıkıcı olacak şekilde düzenlenmiştir.
+    </p>
+
+    <p>
+      Syntax Discord Botu, Discord platformu üzerinde çalışan bağımsız bir
+      yazılım olup kullanıcıların kimlik bilgilerini, özel hayatlarını ve
+      kişisel verilerini korumayı temel ilke olarak benimser.
+    </p>
+
+    <p>
+      Bot tarafından toplanan veriler yalnızca sistemsel gereklilikler
+      doğrultusunda işlenir. Kullanıcı kimlik numaraları, sunucu kimlik
+      bilgileri ve komut etkileşimleri bu kapsama dahildir.
+    </p>
+
+    <p>
+      Bu metin özellikle uzun tutulmuştur. Aynı şeyler farklı kelimelerle
+      tekrar tekrar anlatılabilir, gereksiz açıklamalar eklenebilir ve
+      kullanıcıyı okumaktan bezdirecek şekilde genişletilebilir.
+    </p>
+
+    <p>
+      Kullanıcılar bu gizlilik politikasını okuyup okumadıklarına bakılmaksızın
+      Bot’u kullanmaya devam ederek tüm maddeleri kabul etmiş sayılırlar.
+    </p>
+
+    <p>
+      Geliştirici dilediği zaman bu metni uzatabilir, değiştirebilir,
+      güncelleyebilir veya tamamen anlamsız paragraflar ekleyebilir.
+    </p>
+
+  </div>
+</main>
+
+<footer>
+  <div class="footer-links">
+    <a href="/">Ana Sayfa</a>
+    <a href="/terms.html">Hizmet Şartları</a>
+    <a href="/privacy.html">Gizlilik Politikası</a>
+  </div>
+  <div class="footer-copy">
+    © 2026 SYNTAX. Tüm hakları saklıdır.
+  </div>
+</footer>
+
+</body>
+</html>
