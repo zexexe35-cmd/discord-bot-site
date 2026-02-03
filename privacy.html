@@ -1,49 +1,108 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <title>Gizlilik Politikası</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Syntax - Gizlilik Politikası</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Inter, system-ui, Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: radial-gradient(circle at top, #1e3a8a, #020617);
+      color: #e5e7eb;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      margin-top: 60px;
+      text-align: center;
+    }
+
+    header img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      box-shadow: 0 0 40px rgba(99,102,241,0.6);
+      margin-bottom: 16px;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      margin: 0;
+    }
+
+    main {
+      margin-top: 40px;
+      background: rgba(15, 23, 42, 0.85);
+      border-radius: 18px;
+      padding: 40px;
+      max-width: 700px;
+      width: 90%;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.45);
+    }
+
+    main h2 {
+      margin-top: 32px;
+      color: #e0e7ff;
+    }
+
+    main p {
+      color: #cbd5f5;
+      line-height: 1.7;
+    }
+
+    footer {
+      margin: 40px 0;
+      font-size: 0.85rem;
+      color: #94a3b8;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Gizlilik Politikası</h1>
 
-  <p>
-    Bu gizlilik politikası, Discord botu tarafından toplanan verilerin
-    nasıl kullanıldığını açıklar.
-  </p>
+  <header>
+    <img src="logo.png" alt="Syntax Logo">
+    <h1>Syntax</h1>
+  </header>
 
-  <h2>Toplanan Veriler</h2>
-  <p>
-    Bot, yalnızca çalışması için gerekli olan minimum verileri toplar.
-    Bunlara kullanıcı ID, sunucu ID ve mesaj etkileşim bilgileri dahil olabilir.
-  </p>
+  <main>
+    <h2>Gizlilik Politikası</h2>
 
-  <h2>Verilerin Kullanımı</h2>
-  <p>
-    Toplanan veriler yalnızca botun işlevlerini yerine getirmesi,
-    komutların çalışması ve hizmet kalitesinin artırılması amacıyla kullanılır.
-  </p>
+    <p>
+      Bu gizlilik politikası, Syntax Discord botunun kullanıcı verilerini
+      nasıl topladığını, kullandığını ve koruduğunu açıklar.
+    </p>
 
-  <h2>Verilerin Paylaşımı</h2>
-  <p>
-    Toplanan veriler hiçbir şekilde üçüncü kişilerle paylaşılmaz.
-  </p>
+    <h2>Toplanan Veriler</h2>
+    <p>
+      Syntax yalnızca botun çalışması için gerekli olan minimum verileri toplar.
+      Bunlara kullanıcı ID, sunucu ID ve komut etkileşimleri dahil olabilir.
+    </p>
 
-  <h2>Veri Güvenliği</h2>
-  <p>
-    Veriler yetkisiz erişime karşı makul güvenlik önlemleri ile korunur.
-  </p>
+    <h2>Verilerin Kullanımı</h2>
+    <p>
+      Toplanan veriler yalnızca botun işlevlerini yerine getirmesi,
+      sistemlerin çalışması ve hizmet kalitesinin artırılması amacıyla kullanılır.
+    </p>
 
-  <h2>Veri Silme</h2>
-  <p>
-    Kullanıcılar, bot geliştiricisi ile iletişime geçerek
-    verilerinin silinmesini talep edebilir.
-  </p>
+    <h2>Verilerin Paylaşımı</h2>
+    <p>
+      Syntax tarafından toplanan veriler hiçbir şekilde üçüncü kişilerle paylaşılmaz.
+    </p>
 
-  <h2>İletişim</h2>
-  <p>
-    Bu gizlilik politikası ile ilgili sorular için bot geliştiricisi ile
-    iletişime geçebilirsiniz.
-  </p>
-</body>
-</html>
+    <h2>Veri Güvenliği</h2>
+    <p>
+      Veriler, yetkisiz erişime karşı makul teknik ve organizasyonel önlemlerle korunur.
+    </p>
+
+    <h2>Veri Silme</h2>
+    <p>
