@@ -71,7 +71,6 @@
     main {
       flex: 1;
       display: flex;
-      align-items: center;
       justify-content: center;
       padding: 60px 20px;
     }
@@ -99,206 +98,22 @@
       line-height: 2;
       font-size: 1.05rem;
       margin-bottom: 24px;
-      text-align: center;
     }
 
+    /* FOOTER */
     footer {
-      padding: 30px 0 40px;
+      padding: 35px 0 45px;
       display: flex;
       justify-content: center;
     }
 
+    .footer-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+    }
+
     .footer-links {
       display: flex;
-      gap: 25px;
-      padding: 12px 26px;
-      background: rgba(255,255,255,0.05);
-      border-radius: 999px;
-      border: 1px solid rgba(255,255,255,0.1);
-      backdrop-filter: blur(10px);
-    }
-
-    .footer-links a {
-      color: #c7cbe6;
-      text-decoration: none;
-      font-size: 0.9rem;
-    }
-
-    .footer-links a:hover {
-      color: #a78bfa;
-    }
-  </style>
-</head>
-
-<body>
-
-<header>
-  <div class="header-inner">
-    <img src="syntaxlogo.png" alt="Syntax Logo">
-    <span>SYNTAX</span>
-  </div>
-</header>
-
-<main>
-  <div class="content-box">
-    <h1>Gizlilik Politikası</h1>
-
-    <p>
-      İşbu Gizlilik Politikası, Syntax Discord Botu (“Bot”) tarafından sunulan
-      hizmetler kapsamında kullanıcıların gizliliğinin korunmasına ilişkin
-      esasları, veri işleme süreçlerini ve güvenlik uygulamalarını açıklamak
-      amacıyla hazırlanmıştır.
-    </p>
-
-    <p>
-      Syntax Discord Botu, Discord platformu üzerinde faaliyet gösteren
-      bağımsız bir yazılım olup, kullanıcı gizliliğini ve veri güvenliğini
-      temel bir ilke olarak benimsemektedir. Bu politika, Bot’un kullanımı
-      sırasında oluşabilecek tüm veri işleme faaliyetlerini kapsamaktadır.
-    </p>
-
-    <p>
-      Bot tarafından toplanan veriler, yalnızca hizmetlerin sağlanması,
-      sistemlerin çalışır durumda tutulması, hata tespiti yapılması ve
-      kullanıcı deneyiminin iyileştirilmesi amacıyla kullanılmaktadır.
-    </p>
-
-    <p>
-      Syntax Discord Botu, kullanıcıların gerçek adlarını, soyadlarını,
-      e-posta adreslerini, IP adreslerini, fiziksel konum bilgilerini veya
-      benzeri doğrudan kişisel tanımlayıcı bilgileri bilinçli olarak
-      toplamaz, saklamaz veya işlemez.
-    </p>
-
-    <p>
-      Bot tarafından teknik zorunluluklar kapsamında işlenebilecek veriler,
-      Discord tarafından sağlanan kullanıcı kimlik numaraları (User ID),
-      sunucu kimlik numaraları (Guild ID), kanal kimlik bilgileri ve komut
-      etkileşimlerinden ibarettir.
-    </p>
-
-    <p>
-      Toplanan teknik veriler, otomatik sistemler aracılığıyla işlenir ve
-      herhangi bir manuel inceleme veya insan müdahalesi olmaksızın
-      sistemsel amaçlarla kullanılır.
-    </p>
-
-    <p>
-      Syntax Discord Botu, mesaj içeriklerini kalıcı olarak kaydetmez.
-      Mesajlar yalnızca ilgili komutun çalıştırılması için geçici olarak
-      bellekte tutulabilir ve işlem tamamlandıktan sonra sistem üzerinden
-      silinir.
-    </p>
-
-    <p>
-      Toplanan veya işlenen veriler hiçbir koşulda üçüncü taraflara,
-      reklam sağlayıcılarına, analiz şirketlerine veya ticari kuruluşlara
-      aktarılmaz, satılmaz veya kiralanmaz.
-    </p>
-
-    <p>
-      Bot geliştiricisi, veri güvenliğini sağlamak amacıyla makul teknik ve
-      idari güvenlik önlemlerini uygulamaktadır. Buna rağmen, internet
-      ortamının doğası gereği mutlak güvenliğin garanti edilemeyeceği
-      kullanıcı tarafından kabul edilir.
-    </p>
-
-    <p>
-      Syntax Discord Botu’nun kullanımı tamamen gönüllülük esasına dayanır.
-      Kullanıcılar, Bot’u kullanarak işbu Gizlilik Politikası’nı okuduklarını,
-      anladıklarını ve kabul ettiklerini beyan etmiş sayılır.
-    </p>
-
-    <p>
-      Bot geliştiricisi, bu Gizlilik Politikası’nı önceden bildirimde
-      bulunmaksızın güncelleme veya değiştirme hakkını saklı tutar.
-      Güncellenmiş politika, bu sayfa üzerinden yayınlandığı anda
-      yürürlüğe girer.
-    </p>
-
-    <p>
-      Kullanıcılar, kendileriyle ilişkili teknik verilerin silinmesini talep
-      etme hakkına sahiptir. Bu talepler, geliştirici tarafından makul
-      süre içerisinde değerlendirilir ve sonuçlandırılır.
-    </p>
-
-    <p>
-      Syntax Discord Botu, reşit olmayan kullanıcılara yönelik özel veri
-      toplama faaliyetlerinde bulunmaz ve çocuklara özel bir hedefleme
-      politikası uygulamaz.
-    </p>
-
-    <p>
-      Discord platformunun altyapısından, hizmet kesintilerinden veya
-      üçüncü taraf kaynaklı teknik sorunlardan doğabilecek veri kayıpları
-      veya gecikmelerden Bot geliştiricisi sorumlu tutulamaz.
-    </p>
-
-    <p>
-      Kullanıcıların kendi iradeleriyle paylaştıkları bilgilerden doğabilecek
-      sonuçlar tamamen kullanıcının sorumluluğundadır.
-    </p>
-
-    <p>
-      İşbu Gizlilik Politikası, Syntax Discord Botu’nun hizmet sunduğu tüm
-      sunucular, kullanıcılar ve etkileşimler için geçerlidir.
-    </p>
-
-    <p>
-      Gizlilik politikası ile ilgili her türlü soru, görüş veya talep için
-      kullanıcılar Bot geliştiricisi ile iletişime geçebilir.
-    </p>
-
-    <p>
-      Bu belge, herhangi bir sözleşme niteliği taşımamakla birlikte,
-      bilgilendirme amacıyla hazırlanmış olup, kullanıcı ve geliştirici
-      arasındaki veri işleme esaslarını açıklamaktadır.
-    </p>
-
-  </div>
-</main>
-
-footer {
-  padding: 28px 0;
-  display: flex;
-  justify-content: center;
-}
-
-.footer-inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-.footer-links {
-  display: flex;
-  gap: 22px;
-  padding: 10px 24px;
-  background: rgba(255,255,255,0.06);
-  border-radius: 999px;
-  border: 1px solid rgba(255,255,255,0.12);
-  backdrop-filter: blur(10px);
-}
-
-.footer-links a {
-  color: #c7cbe6;
-  text-decoration: none;
-  font-size: 0.9rem;
-  transition: color 0.2s ease;
-}
-
-.footer-links a:hover {
-  color: #a78bfa;
-}
-
-.footer-copy {
-  font-size: 0.75rem;
-  color: #9aa0c4;
-  opacity: 0.75;
-  text-align: center;
-}
-
-
-</body>
-</html>
+      gap
