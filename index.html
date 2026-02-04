@@ -113,8 +113,6 @@
       transition: all 0.25s ease;
       display: inline-flex;
       align-items: center;
-      justify-content: center;
-      cursor: pointer;
     }
 
     .btn-primary {
@@ -123,10 +121,20 @@
       box-shadow: 0 0 40px rgba(139,92,246,0.55);
     }
 
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 55px rgba(167,139,250,0.8);
+    }
+
     .btn-secondary {
       background: rgba(255,255,255,0.05);
       color: #eaeaf0;
       border: 1px solid rgba(255,255,255,0.12);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255,255,255,0.1);
+      transform: translateY(-2px);
     }
 
     footer {
@@ -136,62 +144,89 @@
       align-items: center;
       gap: 14px;
     }
+
+    .footer-links {
+      display: flex;
+      gap: 25px;
+      padding: 12px 26px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.1);
+      backdrop-filter: blur(10px);
+    }
+
+    .footer-links a {
+      color: #c7cbe6;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .footer-links a:hover {
+      color: var(--g2);
+    }
+
+    .footer-copy {
+      font-size: 0.8rem;
+      color: #9aa0c2;
+      text-align: center;
+    }
   </style>
 </head>
 
 <body>
 
-<header>
-  <div class="header-inner">
-    <img src="syntaxlogo.png" alt="Syntax Logo">
-    <span>SYNTAX</span>
-  </div>
-</header>
+  <header>
+    <div class="header-inner">
+      <img src="syntaxlogo.png" alt="Syntax Logo">
+      <span>SYNTAX</span>
+    </div>
+  </header>
 
-<main>
-  <div class="hero">
-    <h1>Sınırları Zorlayan<br><span>Discord Botu</span></h1>
+  <main>
+    <div class="hero">
+      <h1>
+        Sınırları Zorlayan <br>
+        <span>Discord Botu</span>
+      </h1>
 
-    <p>
-      Syntax ile sunucuna güç kat. Gelişmiş moderasyon,
-      otomasyon sistemleri ve çok daha fazlası.
-    </p>
+      <p>
+        Syntax ile sunucuna güç kat. Gelişmiş moderasyon,
+        otomasyon sistemleri ve çok daha fazlası
+        tek bir botta seni bekliyor.
+      </p>
 
-    <div class="buttons">
-      <!-- BOT EKLE -->
-      <a
-        href="https://discord.com/oauth2/authorize?client_id=1461438572081971386&permissions=8&scope=bot+applications.commands"
-        class="btn btn-primary"
-        target="_blank">
-        Sunucuna Ekle
-      </a>
+      <div class="buttons">
+        <a
+          href="https://discord.com/oauth2/authorize?client_id=1461438572081971386&permissions=8&integration_type=0&scope=bot+applications.commands"
+          class="btn btn-primary"
+          target="_blank"
+        >
+          Sunucuna Ekle
+        </a>
 
-      <!-- DISCORD LOGIN -->
-      <a href="/api/login" class="btn btn-secondary">
-        Discord ile Giriş
-      </a>
+        <a
+          href="https://discord.gg/Z9jKxDNqx7"
+          class="btn btn-secondary"
+          target="_blank"
+        >
+          Destek Sunucusu
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="/">Ana Sayfa</a>
+      <a href="/terms.html">Hizmet Şartları</a>
+      <a href="/privacy.html">Gizlilik Politikası</a>
+      <a href="/api/login">Giriş Yap</a>
     </div>
 
-    <p id="user" style="margin-top:20px;color:#a78bfa;"></p>
-  </div>
-</main>
-
-<footer>
-  <div class="footer-copy">
-    © 2026 SYNTAX. Tüm hakları saklıdır.
-  </div>
-</footer>
-
-<script>
-fetch("/api/me")
-  .then(r => r.json())
-  .then(u => {
-    if (u) {
-      document.getElementById("user").innerText =
-        "Giriş yapıldı: " + u.username;
-    }
-  });
-</script>
+    <div class="footer-copy">
+      © 2026 SYNTAX. Tüm hakları saklıdır.
+    </div>
+  </footer>
 
 </body>
 </html>
